@@ -1,0 +1,13 @@
+name: test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello Aurag"
