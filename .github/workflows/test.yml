@@ -35,17 +35,17 @@ jobs:
         uses: hashicorp/setup-terraform@v2.0.3
 
       - name: terraform init
-        working-directory: ./terraform
+        working-directory: ./resource
         run: terraform init
 
       - name: terraform validate
-        working-directory: ./terraform
+        working-directory: ./resource
         run: terraform validate
 
       - name: terraform plan
-        working-directory: ./terraform
+        working-directory: ./resource
         run: terraform plan
        
       - name: terraform apply
-        working-directory: ./terraform
+        working-directory: ./resource
         run: terraform apply -auto-approve
