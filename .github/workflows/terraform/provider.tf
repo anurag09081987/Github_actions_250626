@@ -12,3 +12,7 @@ terraform {
     key = "action2.terraform.tfstate"
   }
 }
+provider "azurerm"{
+    features {}
+    subscription_id = "4e434342-8dc1-4d58-8efd-e7ca00355854"
+}
