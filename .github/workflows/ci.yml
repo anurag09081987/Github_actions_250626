@@ -39,6 +39,8 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: terraform plan
         working-directory: ./resource
         run: terraform plan
