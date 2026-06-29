@@ -10,7 +10,7 @@ permissions:
   
 jobs:
   -job1:
-    ci:
+    installation:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
@@ -37,7 +37,7 @@ jobs:
 
 
   -job2:
-     plan:
+     comparison:
      needs: ci
       # runs-on: ubuntu-latest
      steps:
