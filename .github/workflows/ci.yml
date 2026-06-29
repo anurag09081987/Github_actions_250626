@@ -37,6 +37,7 @@ jobs:
 
 
   plan:
+    runs-on: ubuntu-latest
     steps:
       - name: terraform plan
         working-directory: ./resource
