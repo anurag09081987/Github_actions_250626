@@ -9,7 +9,7 @@ terraform {
     resource_group_name = "pipelinetest1"
     storage_account_name = "pipelinetest1"
     container_name = "pipelinecontainer"
-    key = "action2.terraform.tfstate"
+    key = "action3.terraform.tfstate"
   }
 }
 provider "azurerm"{
