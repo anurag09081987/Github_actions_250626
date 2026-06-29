@@ -1,4 +1,4 @@
-name: test
+name: cd
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
   
 jobs:
-  testing:
+  cd:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,13 +29,6 @@ jobs:
         working-directory: ./resource
         run: terraform init
 
-      - name: terraform validate
-        working-directory: ./resource
-        run: terraform validate
-
-      - name: terraform plan
-        working-directory: ./resource
-        run: terraform plan
        
       - name: terraform apply
         working-directory: ./resource
