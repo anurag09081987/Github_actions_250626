@@ -33,6 +33,12 @@ jobs:
         working-directory: ./resource
         run: terraform validate
 
+
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    steps:
       - name: terraform plan
         working-directory: ./resource
         run: terraform plan
